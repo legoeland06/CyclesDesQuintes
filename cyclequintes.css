@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+body {
+    background: url('piano_fond.jpg') no-repeat fixed top center;
+    background-size: cover;
+    width: 100%;
+}
+
+#centre {
+    opacity: .8;
+}
+
+#centre:hover {
+    lighting-color: lightsalmon;
+    opacity: .7;
+}
+
+.nav {
+    display: block;
+    color: wheat;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.nav #titre,
+.nav #bpm {
+    display: inline;
+    margin: 15px;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.select {
+    width: 95%;
+    align-content: center;
+    margin: 0 5px;
+    background: none;
+    display: block;
+}
+
+.select-line {
+    width: 95%;
+    align-content: center;
+    margin: 0 15px;
+    padding: 15px;
+    display: flex;
+}
+
+#jouer {
+    background: rgba(0, 59, 28, 0.8);
+    font-size: large;
+}
+
+.saisie,
+.deroulement,
+#titre-drummer,
+#btn-tirroir,
+#btn-tirroir1,
+#btn-groove,
+#btn-accords {
+    width: 98%;
+    align-content: center;
+    margin: 15px 15px;
+    background: rgba(22, 18, 18, 0.8);
+    padding: 1rem;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+#saisie .form-tirroir,
+#saisie .btn {
+    font-size: xx-large;
+}
+
+#saisie .tirroir,
+#saisie .tirroir .btn {
+    font-size: large;
+}
+
+.saisie h2 {
+    color: white;
+}
+
+#btn-saisie {
+    width: auto;
+    background: turquoise;
+    border: none
+}
+
+#pulse {
+    font-size: x-large;
+}
+
+#btn-tirroir,
+#btn-tirroir1 {
+    padding-top: 1rem;
+    display: inline-flex;
+}
+
+#titre-drummer,
+#btn-tirroir,
+#btn-tirroir1,
+#btn-groove,
+#btn-accords {
+    background: rgba(0, 59, 28, 0.8);
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+#titre-drummer small {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+#btn-tirroir a,
+#btn-tirroir1 a {
+    text-decoration: none;
+    background: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-size: x-large;
+}
+
+#btn-groove,
+#btn-accords {
+    text-decoration: none;
+}
+
+.album-group,
+.titre {
+    width: 95%;
+    background: rgba(0, 0, 0, 0);
+    margin: 15px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    color: white;
+    /*text-transform: uppercase;*/
+}
+
+
+/* .tirroir .titre{
+    text-transform: none;
+} */
+
+.titre-cellule,
+.titre-bpm p input {
+    color: white;
+    width: 95%;
+    border: 1px solid rgb(117, 117, 117);
+    border-bottom: none;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.titre-cellule {
+    font-size: smaller;
+}
+
+#titre,
+#bpm {
+    font-size: 4rem;
+}
+
+.saisie .accord {
+    border: 1px solid oldlace;
+    width: 95%;
+    background: rgba(0, 0, 0, 0);
+    margin: 15px;
+    padding: 15px;
+    margin-left: 15px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    color: white;
+    text-transform: none;
+}
+
+.label-accord {
+    color: wheat;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+.select .album-group,
+.deroulement .partie,
+.deroulement .partie .groove,
+.deroulement .partie .accords,
+.select .titre {
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    margin-left: 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.login,
+.password {
+    text-transform: none;
+}
+
+.groove,
+.accords {
+    margin-top: 15px;
+    border: none;
+}
+
+.groove p,
+.accords p,
+#titre-drummer {
+    color: wheat;
+    text-transform: none;
+}
+
+.groove-img,
+.accords-img {
+    margin-top: 15px;
+    max-width: 95%;
+    min-width: 95%;
+}
+
+::-webkit-input-placeholder {
+    color: wheat;
+}
+
+::-ms-input-placeholder {
+    color: wheat;
+}
+
+::-moz-input-placeholder {
+    color: wheat;
+}
+
+:-ms-input-placeholder {
+    color: wheat;
+}
+
+.btn {
+    background: #222;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-mail {
+    color: white;
+    text-decoration: none;
+    font-size: .3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.commandes,
+.comments {
+    width: 95%;
+    text-align: center;
+    align-content: center;
+    margin: 15px 15px;
+    background: rgba(22, 18, 18, 0.8);
+    padding: 15px;
+    padding-bottom: 0px;
+    display: block;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.commandes .infos {
+    display: flex;
+}
+
+.infos {
+    border: 1px solid wheat;
+}
+
+.start-stop {
+    display: flex;
+    margin: 15px;
+}
+
+.start-stop .btn {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+#pause-btn {
+    background: rgba(4, 0, 66, 0.5);
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+#start-btn {
+    background: grey;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+#start-btn a,
+#stop-btn a,
+#pause-btn a {
+    color: wheat;
+    text-decoration: none;
+}
+
+#stop-btn {
+    background: rgba(19, 0, 0, 0.5);
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+.mesures,
+.pulse p input {
+    color: wheat;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid wheat;
+    border-radius: 5px;
+    height: 4rem;
+}
+
+.mesures,
+.pulse p input {
+    border: none;
+}
+
+#mesures {
+    font-size: x-large;
+    text-align: center;
+    color: green;
+}
+
+#temps {
+    /*    text-align:center;*/
+    width: 100%
+}
+
+#logout {
+    color: orangered;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.comments {
+    border: none;
+    /*border-top: 1px solid wheat;*/
+    margin: 1rem;
+}
+
+.comments p {
+    /*font-size: .5rem;*/
+    opacity: 1;
+    color: white;
+    text-align: justify;
+}
